@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vhzin.dev - Portfolio</title>
+    
+    <link href="favicon-dark.png" rel="icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <div class="header-logo">
+                <div class="logo-circle">
+                    <a href="#" id="name" target="_blank">VICTOR HUGO</a>
+                </div>
+            </div>
+            
+            <nav id="header-links">
+                <h2 data-aos="fade-down" data-aos-delay="100" data-aos-offset="0"><a href="#about-me">Home</a></h2>
+                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-offset="0"><a href="#projects" >Projetos</a></h2>
+                <h2 data-aos="fade-down" data-aos-delay="300" data-aos-offset="0"><a href="#cv">Currículo (CV)</a></h2>
+                <h2 data-aos="fade-down" data-aos-delay="400" data-aos-offset="0">Mais Informações</h2>
+                <div id="dropdown">
+                    <button><i class='bx bx-menu'></i>
+                        <div class="dropdown-content" id="menu">
+                            <ul>
+                                <a href="#about-me" class="list"><ol>Home</ol></a>
+                                <a href="#projects" class="list"><ol>Projetos</ol></a>
+                                <a href="#cv" class="list"><ol>Currículo</ol></a>
+                                <a href="" class="list"><ol>Mais Informações</ol></a>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+
+    <section id="about-me">
+        <div class="home" data-aos-offset="0">
+            <h1 data-aos="fade-right" data-aos-delay="100">Olá, me chamo Victor!</h1>
+            <h2 data-aos="fade-right" data-aos-delay="200">Estudante de programação e web-design</h2>
+            <p data-aos="fade-right" data-aos-delay="300" class="intro-text">
+                Tenho 16 anos e faço curso profissionalizante de inglês e Desenvolvimento de Jogos 3D na mesma instituição.
+            </p>
+            <div id="contact" data-aos="fade-up">
+                <h3 class="phone"> <i class='bx bxs-phone'></i> Telefone: +551199738-5862</h3>
+                <h3 class="email"> <i class='bx bxs-envelope'></i> Email: vhzin.dev@gmail.com</h3>
+                <nav class="social-media" data-aos="zoom-in-right" data-aos-delay="400">
+                    <a href="https://github.com/vito08" target="_blank" class="git"> <i id="social-media" class='bx bxl-github'></i></a>
+                    <a href="https://instagram.com/vhzin.dev" target="_blank" class="insta"><i id="social-media" class='bx bxl-instagram-alt' ></i></a>
+                    <a href="mailto:vhzin.dev@gmail.com" target="_blank" class="gmail"><i id="social-media" class='bx bxs-envelope'></i></a>
+                </nav>
+            </div>
+        </div>
+        <div class="profile" data-aos="zoom-in" data-aos-delay="500">
+            <div class="card">
+                <div class="shapes">
+                    <div class="circle"></div>
+                    <div class="semi-circle"></div>
+                </div>
+                <div class="image-container">
+                    <img src="imgs/rigby.jpg" id="image" alt="Foto de Perfil">
+                </div>
+                <div class="text-container" onclick="changeProfileImage()">
+                    <p class="name">Rigby</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1 class="projects-header">PROJETOS</h1>
+        <div class="projects-content">
+            <div class="card" id="card1" data-aos="fade-right">
+                <h3 class="projects-resume">Ecommerce Landing Page</h3>
+                <div class="projects-container">
+                    <img src="imgs/projetos/projeto1.jpg" alt="Projeto 1 - Ecommerce Landing Page">
+                </div>
+                <div class="project-description" id="p1">Uma página principal base para projetos Ecommerce com menu dropdown em JS e responsividade manual para dispositivos celulares</div>
+            </div>
+            <div class="card" id="card2" data-aos="zoom-in">
+                <h3 class="projects-resume">Hamburgueria Coco Burger</h3>
+                <div class="projects-container">
+                    <img src="imgs/projetos/projeto2.jpg" alt="Projeto 2 - Hamburgueria Coco Burger">
+                </div>
+                <div class="project-description" id="p2">Uma página feita na otimização mobile-first focando na estilização e experimentando o Grid. Otimizado para celulares</div>
+            </div>
+            <div class="card" id="card3" data-aos="fade-right">
+                <h3 class="projects-resume">Desafio da Semana 01 - B7Web</h3>
+                <div class="projects-container">
+                    <img src="imgs/projetos/projeto3.jpg" alt="Projeto 3 - Desafio da Semana 1 Curso B7Web">
+                </div>
+                <div class="project-description" id="p3">Página criada com base em todo o conhecimento adquirido na primeira semana de curso de front-end <a href="https://app.b7web.com.br/" target="_blank">B7Web</a>, ensinado pelo professor Victor Boniek</div>
+            </div>
+            <div class="card" id="card4" data-aos="zoom-in">
+                <h3 class="projects-resume">Desafio da Semana 02 - B7Web</h3>
+                <div class="projects-container">
+                    <img src="imgs/projetos/projeto4.jpg" alt="Projeto 4 - Desafio da Semana 2 Curso B7Web">
+                </div>
+                <div class="project-description" id="p4">Página criada com base em todo o conhecimento adquirido na segunda semana de curso de front-end <a href="https://app.b7web.com.br/" target="_blank">B7Web</a>, ensinado pelo professor Victor Boniek</div>
+            </div>
+        </div>
+    </section>
+    <section id="cv">
+        <h1 class="section-header">Currículo</h1>
+        <div class="cv-container">
+            <div class="cv-preview" data-aos="fade-right">
+                <iframe src="currículo/curriculo-victor.pdf" frameborder="0" width="100%" height="500px"></iframe>
+            </div>
+            <div class="cv-download">
+                <a href="currículo/curriculo-victor.docx"><button class="btn-download"><i class='bx bxs-download'></i>Baixar em .docx</button></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
