@@ -63,11 +63,10 @@ a {
 .language {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaçamento entre botões */
-    position: relative; /* Garante que fique na posição correta */
+    gap: 10px;
+    position: relative;
 }
 
-/* Estilização dos botões de idioma */
 .lang-btn {
     background: none;
     border: none;
@@ -85,22 +84,20 @@ a {
 .lang-btn img {
     width: 100%;
     height: 100%;
-    border-radius: 50%; /* Deixa os ícones em formato circular */
-    border: 1px solid #ccc; /* Bordas sutis */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Animação ao passar o mouse */
 .lang-btn:hover {
-    transform: scale(1.1); /* Aumenta um pouco ao passar o mouse */
-    opacity: 0.8; /* Torna levemente translúcido */
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
-/* Ajuste da posição no extremo direito */
 .language {
     position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    right: 20px; /* Alinha à direita */
+    top: 50%;
+    right: 20px;
     transform: translateY(-50%);
 }
 
@@ -606,4 +603,42 @@ a {
     .projects-content {
         grid-template-columns: repeat(1, 1fr);
     }
+
+@media (max-width: 768px) {
+    #more-info .section-header {
+      font-size: 2em;
+    }
+      
+    #more-info .info-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+      
+    #more-info button {
+      width: 80%;
+      margin: 8px 0;
+      padding: 0.8rem;
+    }
+      
+    #more-info .more-info-content {
+        height: auto;
+        padding: 1rem 0.5rem;
+        font-size: 1em;
+    }
+      
+    #more-info .hard-skills-icons,
+    #more-info .soft-skills-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+      
+    #more-info .skills-card {
+      width: 40%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      height: auto;
+      border-top-left-radius: 0%;
+      border-top-right-radius: 0%;
+    }
+}
 }
